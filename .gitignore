@@ -1,0 +1,9 @@
+/obj
+/Library
+/Temp
+/Graphics/
+*.csproj
+*.sln
+*.log
+*.userprefs
+.vs/*
