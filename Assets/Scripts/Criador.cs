@@ -5,7 +5,7 @@ using UnityEngine;
 public class Criador : MonoBehaviour {
 
   public GameObject[] coelho;
-
+  public int tempoEntreCoelhos;
 
   void Start() {
     StartCoroutine(FicarCriandoObjetos());
@@ -17,7 +17,7 @@ public class Criador : MonoBehaviour {
     while(true) {
       CriarObjeto();
       //coelhosCriados = coelhosCriados + 1;
-      yield return new WaitForSeconds(2);
+      yield return new WaitForSeconds(tempoEntreCoelhos);
     }
   }
 
